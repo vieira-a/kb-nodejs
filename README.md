@@ -22,3 +22,21 @@ O "prompt" do Node. Usado para escrever instruções de JavaScript puro no termi
 
 **Exercícios da seção**
 - Ver arquivos process_exportflag.js e process_importflag
+
+### NPM - Node Package Manager
+**npm init -y** cria um package.json, arquivo que contém todas as dependências de modulos do Node.
+**npm update** atualiza as alterações manuais que podem ser realizadas no arquivo package.json.
+**npm install cfonts** para instalar módulo cfonts. Os próprios módulos carregam suas dependências; só instalamos o módulo principal, os módulos e suas dependências são instaladas numa pasta **node_modules** que é criada.
+Não é necessário subir no git a pasta node_modules. 
+**npm install** instala todas as dependêcias de acordo com o contido no arquivo package.json.
+O arquivo package-lock.json não deve ser alterado. Serve para o mapeamento de módulos.
+Execução de script
+Instalação de forma global
+Atualização de móulos
+
+**Exercício da seção**
+Criado um aplicativo para interação com o usuário, utilizando:
+**process.stdout** para escrever saidas na tela
+**process.stdin** para requisitar interação
+**process.on** para criar funções que 'escutem'
+**Assincronismo** função aguardando callback
