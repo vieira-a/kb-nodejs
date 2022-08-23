@@ -26,3 +26,10 @@ Para melhor organização dos arquivos de páginas e partes de páginas
 Criados masi 2 diretórios no views: 
 **pages** para armazenar as páginas index e about e, 
 **partials** para armazenar head, header e footer
+
+### Identificação das páginas
+Outro recurso legal do Node EJS: mostrar em que página você está. Para isso pode-se passar objetos para o Node EJS:
+Criado um parágrafo para exibir o objeto **{pagina: 'nome'}** a ser passado junto com o include no **header.ejs**. 
+Na página about.ejs, na tag include, é necessário passar o objeto com o nome a ser renderizado: {pagina: 'Sobre}.
+Este recurso (objeto) se encontra no **head.ejs**, e a partir dele é montado. As demais páginas precisam referenciá-lo no seus respectivos includes.
+No caso da página **index.ejs** não foi necessário incluir a referência, pois na própria criação do objeto, criou-se uma forma de passar a informação {pagina: 'Home'} para todas as páginas que não possuírem o objeto referenciado no seu include (caso do index); as demais páginas terão suas referências, exceto a index.
