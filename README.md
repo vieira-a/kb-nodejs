@@ -1,6 +1,6 @@
 # Sobre
 
-Este repositório tem como objetivo armazenar anotações e exemplos acerca do "Curso Rocketseat Ignite 4.0 Trilha NodeJS".
+Este repositório tem como objetivo armazenar anotações e exemplos acerca dos cursos "Rocketseat Discover NodeJS", "Node+EJS" e "Rocketseat Ignite 4.0 Trilha NodeJS".
 
 ## Conceitos do NodeJS
 
