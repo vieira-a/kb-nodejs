@@ -21,3 +21,8 @@ Criada a página **about.ejs**
 Adicionados links para as páginas ao **header.ejs**
 Adicionada rota para a página about.ejs no arquivo **server.js**
 
+### Views e partials
+Para melhor organização dos arquivos de páginas e partes de páginas
+Criados masi 2 diretórios no views: 
+**pages** para armazenar as páginas index e about e, 
+**partials** para armazenar head, header e footer
