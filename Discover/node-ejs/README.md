@@ -33,3 +33,9 @@ Criado um parágrafo para exibir o objeto **{pagina: 'nome'}** a ser passado jun
 Na página about.ejs, na tag include, é necessário passar o objeto com o nome a ser renderizado: {pagina: 'Sobre}.
 Este recurso (objeto) se encontra no **head.ejs**, e a partir dele é montado. As demais páginas precisam referenciá-lo no seus respectivos includes.
 No caso da página **index.ejs** não foi necessário incluir a referência, pois na própria criação do objeto, criou-se uma forma de passar a informação {pagina: 'Home'} para todas as páginas que não possuírem o objeto referenciado no seu include (caso do index); as demais páginas terão suas referências, exceto a index.
+
+### Renderizar JavaScript no HTML
+É possível renderizar código JS no HTML através das tags do Node.
+O código deve ser adicionado ao renderizar a página, e ser referenciado no "HTML" por meio das tags apropriadas.
+No exemplo, foi criado um array de objetos ao instanciar a página index no arquivo server.js; este array passou a estar disponível ao renderizar a página index. Por meio de um loop, foi possível renderizar cada item do arry no HTML.
+Foi criada também outra variável com um texto para ser renderizado por meio de um parágrafo na página index.
