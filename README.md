@@ -24,6 +24,8 @@ O "prompt" do Node. Usado para escrever instruções de JavaScript puro no termi
 - Ver arquivos process_exportflag.js e process_importflag
 
 ### NPM - Node Package Manager
+#### Como iniciar um novo projeto com NodeJs
+
 **npm init -y** cria um package.json, arquivo que contém todas as dependências de modulos do Node.
 **npm update** atualiza as alterações manuais que podem ser realizadas no arquivo package.json.
 **npm install cfonts** para instalar módulo cfonts. Os próprios módulos carregam suas dependências; só instalamos o módulo principal, os módulos e suas dependências são instaladas numa pasta **node_modules** que é criada.
@@ -32,7 +34,7 @@ Não é necessário subir no git a pasta node_modules.
 O arquivo package-lock.json não deve ser alterado. Serve para o mapeamento de módulos.
 Execução de script
 Instalação de forma global
-Atualização de móulos
+Atualização de módulos
 
 **Exercício da seção**
 Criado um aplicativo para interação com o usuário, utilizando:
@@ -40,3 +42,13 @@ Criado um aplicativo para interação com o usuário, utilizando:
 **process.stdin** para requisitar interação
 **process.on** para criar funções que 'escutem'
 **Assincronismo** função aguardando callback
+
+- [] Criar um array com perguntas
+- [] Criar função para "chamar" as perguntas do array utilizando o **process.stdout.write**
+
+### Timers
+Funções utilizadas para automatizar execução de instruções no JS.
+**setTimeout** configura o tempo que aplicação aguarda até a execução da tarefa;
+**clearTimeout** cancela o tempo configurado;
+**setInterval** configura o intervalo de execução de uma tarefa;
+**clearInterval** cancela o intervalo configurado
