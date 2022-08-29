@@ -59,3 +59,13 @@ Para os demais métodos é necessário utilizar o Insomnia, pois o navegador só
         })
 
         ```
+    
+    - [x] DELETE
+
+        Criada rota para deletar um identificador.
+
+        ```
+        app.route('/:id').delete((res, req) => {
+            //Função para apagar os dados
+        })
+        ```
