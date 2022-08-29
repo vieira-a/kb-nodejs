@@ -69,3 +69,19 @@ Para os demais métodos é necessário utilizar o Insomnia, pois o navegador só
             //Função para apagar os dados
         })
         ```
+## Parâmetros das requisições
+Existem diversas formas de enviar conteúdo para a API afim de receber retorno ou armazenar informações.
+
+- [x] Body params: conteúdo passado para a API através do body, de forma invisível ao usuário.
+
+- [x] Route params: conteúdo passado para a API através da URL. Exemplo:
+`app.route('/:variavel').get((req, res) => res.send(req.params.variavel))`
+`app.route('/users/:variavel').get((req, res) => res.send(req.params.variavel))`
+
+- [] Query params: conteúdo passado para a API através da URL, identificados através de uma interrogação **?**. Passa informações de variáveis do tipo query via URL. Exemplo:
+
+```
+app.route('/').get((req, res) => res.send(req.query.nome)) // http://localhost:3000?nome=Anderson
+app.route('/about/user').get((req, res) => res.send(req.query.id)) // http://localhost:3000/about/user?id=89654
+
+```
