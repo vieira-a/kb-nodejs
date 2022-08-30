@@ -78,10 +78,14 @@ Existem diversas formas de enviar conteúdo para a API afim de receber retorno o
 `app.route('/:variavel').get((req, res) => res.send(req.params.variavel))`
 `app.route('/users/:variavel').get((req, res) => res.send(req.params.variavel))`
 
-- [] Query params: conteúdo passado para a API através da URL, identificados através de uma interrogação **?**. Passa informações de variáveis do tipo query via URL. Exemplo:
+- [x] Query params: conteúdo passado para a API através da URL, identificados através de uma interrogação **?**. Passa informações de variáveis do tipo query via URL. Exemplo:
 
 ```
 app.route('/').get((req, res) => res.send(req.query.nome)) // http://localhost:3000?nome=Anderson
 app.route('/about/user').get((req, res) => res.send(req.query.id)) // http://localhost:3000/about/user?id=89654
 
 ```
+
+## Consumindo API do GitHub
+- [x] Utilizando **axios**
+- [x] Utilizando **fetch**
